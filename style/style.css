@@ -14,7 +14,7 @@
     
     /* hover */
     --color111: #dbb50a;
-    
+
     --text01: 'Josefin Sans', Verdana, sans-serif;
     --display: 'Julius Sans One', sans-serif;
 }
@@ -25,6 +25,7 @@
     padding: 0;
     border: none;
     background-color: unset;
+    background-repeat: no-repeat;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
