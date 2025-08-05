@@ -46,11 +46,19 @@
     padding: 26px;
 }
 
+#message_icon ::selection {
+    background-color: unset;
+}
+
 .massage_backgound {
     background-image: url("../assets/images/icon-whatsapp.png");
     background-size: cover;
     width: 86px;
     height: 86px;
+    cursor: pointer;
+    display: none; /* ----------------------- */
+    /* display: block; */
+    border-radius: 50%;
 }
 
 /* Main */
@@ -71,7 +79,7 @@ h1, h2 {
     font-size: 32px;
 }
 
-/* Artigo 1 */
+/* Seção 1 */
 
 .about_text {
     display: flex;
@@ -86,4 +94,49 @@ h1, h2 {
     background-image: url("../assets/images/about-logo.png");
     background-size: cover;
     margin: 26px 0;
+}
+
+aside {
+    margin: 0 34px;
+    background-color: var(--color12);
+    border-radius: 8px;
+    padding: 16px 26px;
+}
+
+.aside_icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside_icons > div {
+    background-size: cover;
+}
+
+.aside_icon1 {
+    width: 56px;
+    height: 56px;
+    background-image: url("../assets/images/section1-1.png");
+}
+.aside_icon2 {
+    width: 58px;
+    height: 72px;
+    background-image: url("../assets/images/section1-2.png");
+}
+
+aside > span {
+    width: 100%;
+    font-size: 16px;
+    display: inline-block;
+    color: var(--color00);
+    text-align: center;
+    padding: 24px 0;
+}
+
+aside > img {
+    width: 312px;
+    height: 312px;
+    border-radius: 5px;
 }
