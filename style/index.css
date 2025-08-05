@@ -57,7 +57,7 @@
     height: 86px;
     cursor: pointer;
     display: block;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 /* Main */
@@ -137,4 +137,21 @@ aside > span {
 aside > img {
     width: 100%;
     border-radius: 5px;
+}
+
+/* Paralax */
+.paralax {
+    margin: 52px 0;
+    width: 100%;
+    height: 300px;
+    background-color: var(--color11);
+    background-image: url("../assets/images/paralax.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.paralax_window {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 74, 96, 0.2);
 }
