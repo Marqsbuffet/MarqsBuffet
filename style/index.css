@@ -56,8 +56,7 @@
     width: 86px;
     height: 86px;
     cursor: pointer;
-    display: none; /* ----------------------- */
-    /* display: block; */
+    display: block;
     border-radius: 50%;
 }
 
@@ -136,7 +135,6 @@ aside > span {
 }
 
 aside > img {
-    width: 312px;
-    height: 312px;
+    width: 100%;
     border-radius: 5px;
 }
