@@ -1,4 +1,3 @@
-
 /* Banner */
 
 #banner {
@@ -14,7 +13,7 @@
     padding: 136px 28px 64px 28px;
 }
 
-#banner > span {
+#banner>span {
     display: inline-block;
     width: 100%;
     font-family: var(--display);
@@ -22,7 +21,7 @@
     font-size: 24px;
 }
 
-#banner > button {
+#banner>button {
     width: 240px;
     height: 56px;
 }
@@ -33,14 +32,14 @@
     left: 0;
     width: 100%;
     height: 38px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.493) , var(--color00));
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.493), var(--color00));
 }
 
 /* Link Whatsapp */
 
 #message_icon {
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     right: 0;
     bottom: 0;
     padding: 26px;
@@ -74,7 +73,8 @@ article {
     padding: 34px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 32px;
 }
 
@@ -110,7 +110,7 @@ aside {
     align-items: center;
 }
 
-.aside_icons > div {
+.aside_icons>div {
     background-size: cover;
 }
 
@@ -119,13 +119,14 @@ aside {
     height: 56px;
     background-image: url("../assets/images/section1-1.png");
 }
+
 .aside_icon2 {
     width: 58px;
     height: 72px;
     background-image: url("../assets/images/section1-2.png");
 }
 
-aside > span {
+aside>span {
     width: 100%;
     font-size: 16px;
     display: inline-block;
@@ -134,7 +135,7 @@ aside > span {
     padding: 24px 0;
 }
 
-aside > img {
+aside>img {
     width: 100%;
     border-radius: 5px;
 }
@@ -172,7 +173,7 @@ aside > img {
     align-items: center;
 }
 
-.event > div {
+.event>div {
     margin: 0 28px;
     width: 64px;
     height: 64px;
@@ -195,6 +196,113 @@ aside > img {
     background-image: url("../assets/images/section2-4.png");
 }
 
-.event > span {
+.event>span {
     font-size: 24px;
+}
+
+/* Produtos */
+
+.products>h2 {
+    padding: 0 34px;
+}
+
+.products_display {
+    width: 100%;
+    position: relative;
+    height: 548px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 58px 0;
+}
+
+.product_card {
+    width: 316px;
+    height: 548px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 26px;
+    flex-direction: column;
+    transition: all 450ms ease;
+    background: var(--color00);
+    border: solid 1px var(--color13);
+    box-shadow: 0 8px 20px rgba(18, 30, 88, 0.25);
+}
+
+.product_card>h3 {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    padding: 28px 0;
+}
+
+.product_card>img {
+    width: 258px;
+    margin: 0 auto;
+}
+
+.product_card>p {
+    padding: 28px 36px;
+    text-align: center;
+}
+
+.product_card.active {
+    width: 316px;
+    height: 548px;
+}
+
+.swipe_icon {
+    display: none;
+    position: fixed;
+    background-image: url("../assets/images/icon-swipe.png");
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    bottom: 16px;
+    animation: swipeLeft 2.5s linear infinite;
+    transform-origin: center center;
+}
+
+.product_card.active>.swipe_icon {
+    display: block;
+}
+
+.protected_window {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(135, 135, 135, 0.09);
+}
+
+.product_card.active>.protected_window {
+    display: none;
+}
+
+@keyframes swipeLeft {
+    0% {
+        transform: translateX(10px) rotate(5deg);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: translateX(0px) rotate(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-10px) rotate(-5deg);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(10px) rotate(5deg);
+        opacity: 0.5;
+    }
 }
