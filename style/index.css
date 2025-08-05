@@ -16,9 +16,6 @@
     --color111: #dbb50a; 
     --text01: 'Josefin Sans', Verdana, sans-serif;
     --display: 'Julius Sans One', sans-serif;
-    /*
-    --title01: 'League Gothic', 'Times New Roman', sans-serif;
-    --title02: 'Lilita One', 'Times New Roman', sans-serif;;*/
 }
 
 /* restrição de estilização padrão de elementos*/
@@ -44,6 +41,8 @@ html {
 body::-webkit-scrollbar {
     display: none;
 }
+
+/* estilização do index */
 
 header {
     width: 100%;
@@ -108,4 +107,24 @@ button:hover {
     width: 100%;
     height: 38px;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.493) , var(--color00));
+}
+
+#message_icon {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    padding: 26px;
+}
+
+.massage_backgound {
+    background-image: url("../assets/images/icon-whatsapp.png");
+    background-size: cover;
+    width: 86px;
+    height: 86px;
+}
+
+main {
+    width: 100%;
+    background-color: var(--color00);
 }
