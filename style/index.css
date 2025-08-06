@@ -332,3 +332,60 @@ article button {
 .map {
     padding: 42px 0;
 }
+
+/* Rodapé */
+
+footer {
+    font-family: var(--text01);
+    font-size: 24px;
+    background-color: var(--color12);
+    color: var(--color00);
+}
+
+.credits {
+    margin-top: 280px;
+    color: rgba(240, 248, 255, 0.486);
+}
+
+.social_list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px;
+    margin-bottom: 280px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social1, .social2, .social3, .social4, .star_full {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+}
+
+.social1 {
+    background-image: url("../assets/images/icon-whatsapp.png");
+}
+.social2 {
+    background-image: url("../assets/images/icon-instagram.png");
+}
+.social3 {
+    background-image: url("../assets/images/icon-facebook.png");
+}
+.social4 {
+    background-image: url("../assets/images/icon-google-maps.png");
+}
+.star_full {
+    width: 28px;
+    height: 28px;
+    background-image: url("../assets/images/icon-star.png");
+}
+
+.stars {
+    display: flex;
+    gap: 6px;
+}
