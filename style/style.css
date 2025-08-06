@@ -10,7 +10,7 @@
     --color10: #420E28;
     --color11: #FAE008;
     --color12: #8C4313;
-    --color13: #878787; /* stroke de cards */
+    --color13: rgba(135, 135, 135, 0.35);
     
     /* hover */
     --color111: #dbb50a;
