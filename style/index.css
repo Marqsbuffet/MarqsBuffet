@@ -306,3 +306,29 @@ aside>img {
         opacity: 0.5;
     }
 }
+
+/* Região de atendimento */
+
+article {
+    width: 100%;
+    padding: 49px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color11);
+    background-color: var(--color10);
+    background-image: linear-gradient(#5B1E44 75%, #3D0C2E);
+}
+
+article>h2 {
+    padding: 0 34px;
+}
+
+article button {
+    width: 216px;
+    margin: auto;
+}
+
+.map {
+    padding: 42px 0;
+}
