@@ -79,3 +79,27 @@ button:hover {
 #header_icon > img {
     width: 90px;
 }
+
+/* Link Whatsapp */
+
+#message_icon {
+    position: fixed;
+    z-index: 20;
+    right: 0;
+    bottom: 0;
+    padding: 26px;
+}
+
+#message_icon ::selection {
+    background-color: unset;
+}
+
+.massage_backgound {
+    background-image: url("../assets/images/icon-whatsapp.png");
+    background-size: cover;
+    width: 86px;
+    height: 86px;
+    cursor: pointer;
+    display: block;
+    border-radius: 25%;
+}
