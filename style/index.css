@@ -21,7 +21,7 @@
     font-size: 24px;
 }
 
-#banner>button {
+#banner button {
     width: 240px;
     height: 56px;
 }
@@ -155,6 +155,12 @@ aside>img {
     width: 100%;
     height: 100%;
     background-color: rgba(70, 74, 96, 0.2);
+}
+
+@supports (-webkit-touch-callout: none) {
+  .parallax {
+    background-attachment: scroll; /* fallback para iphones */
+  }
 }
 
 /* Seção 2 */
@@ -343,22 +349,27 @@ footer {
 }
 
 .credits {
-    margin-top: 280px;
-    color: rgba(240, 248, 255, 0.486);
+    color: rgba(240, 248, 255, 0.15);
 }
 
 .social_list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
     padding: 64px;
-    margin-bottom: 280px;
+    margin-bottom: 220px;
 }
 
 .social {
     display: flex;
     align-items: center;
     gap: 16px;
+    cursor: pointer;
+}
+
+.social > span {
+    width: 168px;
 }
 
 .social1, .social2, .social3, .social4, .star_full {
