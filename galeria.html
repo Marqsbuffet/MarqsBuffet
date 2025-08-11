@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galeria - Marq's Buffet</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/galeria.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <script src="script/galeria.js" defer></script>
+</head>
+
+<body>
+    <div id="message_icon">
+        <a href="#whats" target="_blank" class="massage_backgound"></a>
+    </div>
+    <header>
+        <div id="header_icon">
+            <img src="assets/images/marqs-logo.png" alt="Logo Marq's Buffet">
+        </div>
+        <nav id="header_navigate_links"></nav>
+        <a href="index.html"><button id="header_btn">Voltar</button></a>
+    </header>
+    <div class="filters">
+        <button onclick="filter(0);" class="filter active">Buffet</button>
+        <button onclick="filter(1);" class="filter">Casamentos</button>
+        <button onclick="filter(2);" class="filter">Confraternizações</button>
+        <button onclick="filter(3);" class="filter">Eventos festivos</button>
+        <button onclick="filter(4);" class="filter">Outros</button>
+    </div>
+    <main id="feed"></main>
+</body>
+
+</html>

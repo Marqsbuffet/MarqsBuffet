@@ -1,0 +1,33 @@
+
+header {
+    position: sticky;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.24);
+}
+
+.filters {
+    background-color: var(--color12);
+    display: flex;
+    gap: 12px;
+    padding: 26px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.filter {
+    border-radius: 26px;
+    background-color: transparent;
+    border: 2px solid var(--color11);
+    color: var(--color11);
+    white-space: nowrap;
+    transition: 300ms;
+}
+
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter.active {
+    background-color: var(--color11);
+    color: var(--color12);
+    transition: 150ms;
+}
