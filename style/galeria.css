@@ -1,6 +1,7 @@
 
 header {
     position: sticky;
+    top: 0;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.24);
 }
 
@@ -30,4 +31,28 @@ header {
     background-color: var(--color11);
     color: var(--color12);
     transition: 150ms;
+}
+
+main {
+    display: grid;
+    gap: 16px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+    padding-bottom: 160px;
+    height: 590px;
+    overflow-y: scroll;
+}
+
+.image {
+    display: inline-block;
+    width: 186px;
+    height: 186px;
+    border-radius: 8px;
+    background-position: center;
+    transition: 500ms;
+}
+
+.hidden {
+    display: none;
 }

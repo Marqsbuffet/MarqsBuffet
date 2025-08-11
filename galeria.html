@@ -12,7 +12,7 @@
     <script src="script/galeria.js" defer></script>
 </head>
 
-<body>
+<body onload="filter(0);">
     <div id="message_icon">
         <a href="#whats" target="_blank" class="massage_backgound"></a>
     </div>
@@ -24,13 +24,22 @@
         <a href="index.html"><button id="header_btn">Voltar</button></a>
     </header>
     <div class="filters">
-        <button onclick="filter(0);" class="filter active">Buffet</button>
+        <button onclick="filter(0);" class="filter active">Todos</button>
         <button onclick="filter(1);" class="filter">Casamentos</button>
         <button onclick="filter(2);" class="filter">Confraternizações</button>
         <button onclick="filter(3);" class="filter">Eventos festivos</button>
         <button onclick="filter(4);" class="filter">Outros</button>
     </div>
-    <main id="feed"></main>
+    <main>
+        <img src="assets/galeria/galeria00.png" class="image f3 f4" alt="Foto do Marqs Buffet">
+        <img src="assets/galeria/galeria01.png" class="image f3 f4" alt="Foto do Marqs Buffet">
+        <img src="assets/galeria/galeria02.png" class="image f4" alt="Foto do Marqs Buffet">
+        <img src="assets/galeria/galeria03.png" class="image f2 f4" alt="Foto do Marqs Buffet">
+        <img src="assets/galeria/galeria04.png" class="image f2" alt="Foto do Marqs Buffet">
+        <img src="assets/galeria/galeria05.png" class="image f2" alt="Foto do Marqs Buffet">
+        <img src="assets/galeria/galeria06.png" class="image f1" alt="Foto do Marqs Buffet">
+        <img src="assets/galeria/galeria07.png" class="image f3 f4" alt="Foto do Marqs Buffet">
+    </main>
 </body>
 
 </html>
