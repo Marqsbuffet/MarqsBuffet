@@ -35,22 +35,22 @@ header {
 
 main {
     display: grid;
-    gap: 16px;
+    gap: 2vw;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     padding: 16px;
     padding-bottom: 160px;
     height: 590px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .image {
     display: inline-block;
-    width: 186px;
-    height: 186px;
+    width: 45vw;
+    height: 45vw;
     border-radius: 8px;
     background-position: center;
-    transition: 500ms;
 }
 
 .hidden {
