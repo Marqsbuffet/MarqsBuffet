@@ -80,6 +80,27 @@ button:hover {
     width: 90px;
 }
 
+#header_navigate_links {
+    color: var(--color11);
+    font-family: var(--text01);
+    position: absolute;
+    right: calc(112px + 10%);
+    display: none;
+}
+
+#header_navigate_links>a:hover{
+    color: var(--color111);
+}
+
+@media (min-width: 700px) {
+    header{
+        padding: 20px 5%;
+    }
+    #header_navigate_links {
+        display: block;
+    }
+}
+
 /* Link Whatsapp */
 
 #message_icon {

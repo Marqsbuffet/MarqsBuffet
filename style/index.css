@@ -35,6 +35,21 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.493), var(--color00));
 }
 
+@media (min-width: 490px) and (max-width: 1000px) {
+    #banner {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    #banner {
+        background-size: cover;
+        background-image: url("../assets/images/banner.png");
+        background-position: center -40vw;
+    }
+}
+
 /* Main */
 
 main {
@@ -52,6 +67,13 @@ section {
 h1,
 h2 {
     font-size: 32px;
+}
+
+@media (min-width: 1000px) {
+    section {
+        width: 800px;
+        margin: auto;
+    }
 }
 
 /* Seção 1 */
@@ -116,6 +138,13 @@ aside>img {
     border-radius: 5px;
 }
 
+@media (min-width: 550px) {
+    aside {
+        width: 300px;
+        margin: auto;
+    }
+}
+
 /* Paralax */
 .paralax {
     margin: 52px 0;
@@ -137,6 +166,13 @@ aside>img {
   .parallax {
     background-attachment: scroll; /* fallback para iphones */
   }
+}
+
+@media (min-width: 860px) {
+    .paralax {
+        height: 220px;
+        margin: 22px 0;
+    }
 }
 
 /* Seção 2 */
@@ -180,6 +216,19 @@ aside>img {
 
 .event>span {
     font-size: 24px;
+}
+
+@media (min-width: 860px) {
+    .events_list {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 224px;
+        padding: 22px 0;
+    }
+    .event {
+        flex: 0 0 calc(50% - 10px);
+    }
 }
 
 /* Produtos */
@@ -289,6 +338,18 @@ aside>img {
     }
 }
 
+@media (min-width: 860px) {
+    .products h2 {
+        width: 800px;
+        margin: auto;
+    }
+}
+
+
+.products *::selection {
+    background-color: unset;
+}
+
 /* Região de atendimento */
 
 article {
@@ -375,4 +436,12 @@ footer {
 .stars {
     display: flex;
     gap: 6px;
+}
+
+@media (min-width: 860px) {
+    .social_list {
+        margin-bottom: 80px;
+        padding: 26px 10%;
+        align-items: unset;
+    }
 }
