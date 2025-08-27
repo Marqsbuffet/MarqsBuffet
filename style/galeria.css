@@ -54,3 +54,24 @@ main {
 .hidden {
     display: none;
 }
+
+@media (min-width: 960px) {
+    main {
+        padding: 16px 10%;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: unset;
+    }
+    .image {
+        width: 256px;
+        height: 256px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .filters {
+        padding: 26px 10%;
+    }
+}
