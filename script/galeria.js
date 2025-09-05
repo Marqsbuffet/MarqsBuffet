@@ -33,10 +33,41 @@ function loadImages() {
 						});
 					}
 					galery.appendChild(element);
+					element.addEventListener('click', handleOpenElement);
 				}
 			});
-			filter(0)
+			filter(0);
 		})
+}
+
+/* Open Element */
+function handleOpenElement(element){
+	console.log(element.srcElement.alt);
+	const screenBc = document.getElementsByClassName('screen_background')[0];
+	const screenContent = document.getElementsByClassName('screen_content')[0];
+	screenContent.innerHTML = '';
+	screenBc.style.display = 'flex';
+
+	let content;
+	if(element.srcElement.alt.split('.')[1] != 'mp4'){
+		content = document.createElement('img');
+	}
+	else {
+		content = document.createElement('video');
+		content.controls = true;
+		content.muted = true;
+		content.autoplay = true;
+	}
+	content.src = element.srcElement.src;
+	content.alt = element.srcElement.alt;
+	content.classList.add('full_img');
+	screenContent.appendChild(content);
+}
+
+/* Close Element */
+function closeElement(){
+	const screenBc = document.getElementsByClassName('screen_background')[0];
+	screenBc.style.display = 'none';
 }
 
 /* Filter */
@@ -47,6 +78,7 @@ function filter(id) {
 	const f2 = document.querySelectorAll('.f2');
 	const f3 = document.querySelectorAll('.f3');
 	const f4 = document.querySelectorAll('.f4');
+	const f5 = document.querySelectorAll('.f5');
 	filters.forEach((f) => {
 		f.classList.remove('active');
 	});
@@ -67,6 +99,9 @@ function filter(id) {
 			break;
 		case 4:
 			f4.forEach(show);
+			break;
+		case 5:
+			f5.forEach(show);
 			break;
 	}
 }
