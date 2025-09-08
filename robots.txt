@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gus1331.github.io/MarqsBuffet/sitemap.xml
