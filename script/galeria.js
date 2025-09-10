@@ -3,7 +3,7 @@ const filters = document.querySelectorAll('.filter');
 /* Consume imgs from github rep */
 
 function loadImages() {
-	fetch("https://api.github.com/repos/Gus1331/MarqsBuffet/contents/assets/galeria")
+	fetch("https://api.github.com/repos/marqsbuffet/MarqsBuffet/contents/assets/galeria")
 		.then(response => response.json())
 		.then(data => {
 			const galery = document.getElementById('galery');
