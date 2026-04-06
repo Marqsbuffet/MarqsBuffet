@@ -51,6 +51,7 @@ main {
     border-radius: 8px;
     background-position: center;
 	cursor: pointer;
+    object-fit: cover;
 }
 
 .hidden {
